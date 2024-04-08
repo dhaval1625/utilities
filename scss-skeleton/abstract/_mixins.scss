@@ -1,0 +1,44 @@
+// media queries
+@mixin media1399 {
+   @media screen and (max-width: 1399px) {
+      @content;
+   }
+}
+@mixin media1199 {
+   @media screen and (max-width: 1199px) {
+      @content;
+   }
+}
+@mixin media991 {
+   @media screen and (max-width: 991px) {
+      @content;
+   }
+}
+@mixin media767 {
+   @media screen and (max-width: 767px) {
+      @content;
+   }
+}
+@mixin media575 {
+   @media screen and (max-width: 575px) {
+      @content;
+   }
+}
+@mixin media992-1399 {
+   @media screen and (max-width: 1399px) and (min-width: 992px) {
+      @content;
+   }
+}
+
+
+// space child evenly
+@mixin spaceX($space) {
+   >*:not(:last-child) {
+      margin-right: $space;
+   }
+}
+@mixin spaceY($space) {
+   >*:not(:last-child) {
+      margin-bottom: $space;
+   }
+}

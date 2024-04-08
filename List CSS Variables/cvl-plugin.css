@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cvl-box {
+   margin: 50px auto;
+   max-width: 1000px;
+}
+
+.cvl-list {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.cvl-item,
+.cvl-valueBox,
+.cvl-variableWrapper {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+}
+
+.cvl-item {
+   display: grid;
+   grid-template-columns: 40% 60%;
+   border: 1px solid rgba(141, 141, 141, 0.267);
+   border-radius: 8px;
+   padding: 10px 20px;
+   position: relative;
+}
+
+.cvl-item::before {
+   position: absolute;
+   content: 'Copied!';
+   left: -77px;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 13px;
+   padding: 8px;
+   border-radius: 6px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+   transition: all 0.3s;
+   opacity: 0;
+}
+
+.cvl-item--copied::before {
+   opacity: 1;
+}
+
+.cvl-color {
+   width: 25px;
+   height: 25px;
+   border-radius: 8px;
+   background-color: #f6f6f6;
+   flex-shrink: 0;
+}
+
+.cvl-variable {
+   font-size: 25px;
+   font-weight: 500;
+}
+
+.cvl-value {
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.cvl-btnCopy, .cvl-btnRefresh {
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+
+.cvl-btnCopy:hover {
+   filter: brightness(0.5);
+}
+
+.cvl-btnRefresh {
+   display: flex;
+   gap: 10px;
+   font-size: 16px;
+   margin: 0 auto 20px;
+   border: 1px solid rgba(141, 141, 141, 0.493);
+   border-radius: 8px;
+   padding: 10px 20px;
+   font-weight: 600;
+
+}
+
+.cvl-btnRefresh img {
+   height: 16px;
+   transform-origin: center;
+   transition: all 0.4s;
+}
+
+.cvl-btnRefresh:hover img {
+   transform: rotate(90deg);
+}

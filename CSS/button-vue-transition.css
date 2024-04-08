@@ -1,0 +1,30 @@
+/* IN THIS TRANSITION ONE BUTTON WILL MOVE DOWN AND OTHER WILL COME FROM TOP OF THAT */
+
+
+.btn-progress-leave-to {
+   opacity: 0;
+   transform: translateY(-50%);
+}
+
+.btn-progress-enter-from {
+   opacity: 0;
+   transform: translateY(50%);
+}
+
+.btn-progress-leave-from {
+   opacity: 1;
+   transform: translateY(0);
+}
+
+.btn-progress-enter-to {
+   opacity: 1;
+   transform: translateY(0);
+}
+
+.btn-progress-enter-active {
+   transition: all 0.2s ease-in;
+}
+
+.btn-progress-leave-active {
+   transition: all 0.2s ease-in-out;
+}

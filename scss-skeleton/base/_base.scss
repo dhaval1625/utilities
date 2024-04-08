@@ -1,0 +1,14 @@
+// general utility styles
+.gw-img {
+   overflow: hidden;
+   img {
+      width: 100%;
+      max-width: 100%;
+   }
+}
+
+ul:not(.default) {
+   li {
+      list-style: none;
+   }
+}

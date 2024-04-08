@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSS Variables List</title>
+   <link rel="stylesheet" href="./demo.css">
+   <link rel="stylesheet" href="./cvl-plugin.css">
+   <script defer src="./cvl-plugin.js"></script>
+</head>
+<body>
+   <div class="cvl-box">
+
+      <!-- refresh button -->
+      <button class="cvl-btnRefresh">
+         <span>Refresh</span>
+         <img src="./refresh.svg" alt="refresh">
+      </button>
+
+      <ul class="cvl-list">
+         <li class="cvl-item">
+            <div class="cvl-variableWrapper">
+               <button class="cvl-btnCopy">
+                  <img src="copy.svg" alt="copy icon">
+               </button>
+               <p class="cvl-variable">--color-bg-1</p>
+            </div>
+            <div class="cvl-valueBox">
+               <div class="cvl-color"></div>
+               <p class="cvl-value">#f6f6f6</p>
+            </div>
+         </li>
+      </ul>
+   </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* GENERAL MODAL STYLES */
+.overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 100;
+   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 200;
+}
+
+
+
+/* MODAL VUE TRANSITION STYLES */
+.modal-enter-from,
+.modal-leave-to {
+   opacity: 0;
+   transform: translate(-50%, -46%);
+}
+
+.modal-leave-from,
+.modal-enter-to {
+   opacity: 1;
+   transform: translate(-50%, -50%);
+}
+
+.modal-enter-active,
+.modal-leave-active {
+   transition: all 0.3s ease-in-out;
+}

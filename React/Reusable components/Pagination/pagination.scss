@@ -1,0 +1,72 @@
+@import "../_variable.scss";
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: 2rem;
+
+  .pagination-item {
+    padding: 14px 23px;
+    text-align: center;
+    margin: 0 5px;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 17px;
+    line-height: 26px;
+    font-family: $theme_font;
+    font-weight: 500;
+
+    &.dots:hover {
+      background-color: transparent;
+      cursor: default;
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+      cursor: pointer;
+    }
+
+    &.selected {
+      background-color: $secondary_color;
+      color: $primary_color_contrace;
+    }
+
+    .arrow {
+      &::before {
+        position: relative;
+        /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+        content: "";
+        /* By using an em scale, the arrows will size with the font */
+        display: inline-block;
+        width: 0.6em;
+        height: 0.6em;
+        border-right: 0.12em solid rgba(0, 0, 0, 0.87);
+        border-top: 0.12em solid rgba(0, 0, 0, 0.87);
+      }
+
+      &.left {
+        transform: rotate(-135deg) translate(-50%);
+      }
+
+      &.right {
+        transform: rotate(45deg);
+      }
+    }
+
+    &.disabled {
+      pointer-events: none;
+
+      .arrow::before {
+        border-right: 0.12em solid rgba(0, 0, 0, 0.43);
+        border-top: 0.12em solid rgba(0, 0, 0, 0.43);
+      }
+
+      &:hover {
+        background-color: transparent;
+        cursor: default;
+      }
+    }
+  }
+}

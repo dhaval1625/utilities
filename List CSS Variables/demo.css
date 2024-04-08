@@ -1,0 +1,29 @@
+/* *************** GLOBAL VARIABLES START ********************** */
+:root {
+   /* colors */
+   --color-theme-1: #69d4cc;
+   --color-theme-2: #73e6ac;
+   --color-theme-3: #0a2035;
+   --color-theme-3-faded: #0a2035a6;
+   --color-bg-1: #f6f6f6;
+   --color-bg-2: #1e1e1e;
+   --color-bg-3: #111d2f;
+   --color-bg-4: #070a0f;
+   --color-text-dark-1: #0a2035;
+   --color-text-dark-2: #565656;
+   --color-text-dark-3: #202020;
+   --color-text-dark-4: #505050;
+   --color-text-light-1: #fff;
+   --color-text-light-2: rgb(212, 101, 101);
+
+   /* fonts */
+   --font-dm-sans: 'DM Sans', sans-serif;
+   --font-theme-1: 'Museo Sans', sans-serif;
+   --font-theme-2: Calibri, sans-serif;
+
+   /* gradiants */
+   --gradiant-theme-1: linear-gradient(270deg, #73e6ac 0%, #69d4cc 100%);
+   --gradiant-theme-2: linear-gradient(270deg, #0f192c 0%, #1a253a 100%);
+}
+/* *************** GLOBAL VARIABLES END ********************** */
+
